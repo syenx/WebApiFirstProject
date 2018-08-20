@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_game"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="br.com.ohbiker.placarapp.GameActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txtCasa"
+            style="@style/titulo"
+            tools:text="TIMECASA" />
+
+        <TextView
+            android:id="@+id/txtVisitante"
+            style="@style/titulo"
+            tools:text="TIMEVISITANTE" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/nbrCasa"
+            style="@style/placar" />
+
+        <TextView
+            android:id="@+id/nbrVisitante"
+            style="@style/placar" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btnGolCasa"
+            style="@style/butao"
+            android:onClick="onGolCasa"
+            android:text="Gol" />
+
+        <Button
+            android:id="@+id/btnGolVisitante"
+            style="@style/butao"
+            android:onClick="onGolVisitante"
+            android:text="Gol" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btnLimpar"
+            style="@style/butao"
+            android:onClick="onReset"
+            android:text="RESET" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+android:background="@drawable/background"
+    android:orientation="vertical"
+    tools:context="com.example.marcelo.aula2.view.MainActivity">
+
+
+    <TextView
+        android:id="@+id/text_label_today"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/hoje"
+        android:textColor="@color/colorPrimaryText"
+        android:textSize="20sp"
+
+
+        />
+
+    <TextView
+        android:id="@+id/text_today"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/text_label_today"
+        android:text=" 10/29/2019"
+        android:textColor="@color/colorPrimaryText"
+
+        android:textSize="20sp" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/text_label_today"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="@color/colorPrimaryText"></View>
+
+    <TextView
+        android:id="@+id/text_label_day_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp"
+        android:text="Dias Restantes para o fim do ano"
+        android:textColor="@color/colorPrimaryText"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/text_day_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_label_day_left"
+        android:layout_centerHorizontal="true"
+        android:padding="20sp"
+        android:text="365 dias"
+        android:textColor="@color/colorLightGreem"
+        android:textSize="20sp" />
+
+
+    <Button
+        android:id="@+id/button_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_alignStart="@+id/view"
+        android:backgroundTint="@color/colorAccent"
+        android:textColor="@color/colorTextWhit"
+        android:padding="20dp"
+        android:text="sim/não/não confimado"
+        android:textSize="20sp" />
+
+
+</RelativeLayout>

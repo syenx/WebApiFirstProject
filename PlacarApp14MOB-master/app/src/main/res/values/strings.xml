@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">PlacarApp</string>
+    <string name="label_titulo">PlacarApp</string>
+    <string name="devPor">Desenvolvido por XXX</string>
+</resources>
